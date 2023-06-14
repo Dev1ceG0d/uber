@@ -1,5 +1,6 @@
 $main-color: #1eacc7
 $second-color: #ff5656
+$third-color: #1CA8C3
 
 =btn_hover
 	&:hover
@@ -170,12 +171,14 @@ nav
 	&_white 
 		color: #fff
 
-.reasons .reasons_block
-	display: flex
-	justify-content: center
-	align-items: center
-	margin-top: 35px
-	.reasons_round
+.reasons
+	padding: 71px 0 65px 0
+	&_block
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 35px
+	&_round
 		display: flex
 		justify-content: center
 		align-items: center
@@ -184,18 +187,18 @@ nav
 		height: 113px
 		background-color: $main-color
 		border-radius: 100%
-	.reasons_descr
+	&_descr
 		width: 343px
-		.reasons_subtitle
-			line-height: 21px
-			color: $main-color
-			font-size: 17px
-			font-weight: 400
-		.reasons_text
-			color: #202020
-			font-size: 15px
-			font-weight: 300
-			line-height: 21px
+	&_subtitle
+		line-height: 21px
+		color: $main-color
+		font-size: 17px
+		font-weight: 400
+	&_text
+		color: #202020
+		font-size: 15px
+		font-weight: 300
+		line-height: 21px
 
 .mobile
 	min-height: 865px
@@ -287,3 +290,50 @@ nav
 		z-index: 1
 		height: 500px
 		background: #070716
+
+.require
+	padding: 75px 0 85px 0
+	&_block
+		margin: 33px 0
+		&_no_margin_bottom
+			margin-bottom: 0
+	&_title
+		font-style: normal
+		font-weight: 400
+		font-size: 22px
+		align-items: center
+		color: $third-color
+		&_red
+			color: $second-color
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 15px
+		li
+			font-style: normal
+			position: relative
+			font-weight: 300
+			font-size: 17px
+			line-height: 24px
+			margin-bottom: 10px
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: -31px
+				top: 2px
+				width: 21px
+				height: 20px
+				background: url('../icons/check_blue.svg') center (center / cover) no-repeat
+	&_description
+		font-style: normal
+		font-weight: 300
+		font-size: 17px
+		line-height: 24px
+		color: $third-color
+	.warning
+		.require_list
+			li
+				&::before
+					background: url('../icons/check_red.svg') center (center / cover) no-repeat
+					
