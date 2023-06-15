@@ -137,14 +137,20 @@ nav
 	padding: 5px 12px
 	background-color: #000000
 	color: #ffffff
-	font-size: 11px
 	font-weight: 300
-	text-transform: uppercase
-	text-align: center
 	z-index: 2
+	font-size: 11px
+	align-items: center
+	text-align: center
+	text-transform: uppercase
 	&_white 
 		background-color: #fff
 		color: #000
+	&_min
+		width: 75px
+		font-weight: 400
+		color: #070716
+
 
 .title
 	position: relative
@@ -336,4 +342,25 @@ nav
 			li
 				&::before
 					background: url('../icons/check_red.svg') center (center / cover) no-repeat
+
+.world
+	position: relative
+	padding: 50px 0 50px 0			
+	background: url('../img/bg/map.jpg') center (center / cover) no-repeat
+	min-height: 715px
+	&_link
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		text-align: center
+		bottom: 50px
+		font-style: normal
+		font-weight: 400
+		font-size: 15px
+		text-transform: uppercase
+		color: $third-color
+		&:hover
+			text-decoration: none
+			color: white
+
 					
