@@ -22,6 +22,9 @@ nav
 		color: #ffffff
 		font-size: 15px
 		font-weight: 300
+		text-decoration: none
+		&:hover
+			color: $main-color
 	&_item
 		border-right: 2px dotted black
 		padding-right: 24px
@@ -50,6 +53,8 @@ nav
 		font-weight: 300
 		margin-top: 19px
 		text-align: right
+		&:hover
+			color: $main-color
 	&_phone
 		display: block
 		margin-top: 8px
@@ -59,6 +64,9 @@ nav
 		text-transform: uppercase
 		text-align: right
 		line-height: 12px
+		text-decoration: none
+		&:hover
+			color: $main-color
 	&_btn
 		margin-top: 19px
 		width: 172px
@@ -83,7 +91,6 @@ nav
 		font-weight: 700
 		text-transform: uppercase
 		font-size: 60px
-		line-height: 60px
 		margin: 0
 		text-align: center
 	&_subheader
@@ -93,7 +100,6 @@ nav
 		font-size: 36px
 		line-height: 36px
 		margin: 0
-		margin-top: 22px
 		text-align: center
 	&_descr
 		color: #ffffff
@@ -346,8 +352,8 @@ nav
 		font-size: 15px
 		text-transform: uppercase
 		color: $third-color
+		text-decoration: none
 		&:hover
-			text-decoration: none
 			color: white
 
 footer
@@ -385,8 +391,12 @@ footer
 			width: 32px
 			height: 32px
 			background: #070716
+			text-decoration: none
 			span
 				color: #fff
+				&:hover
+					color: $main-color
+
 	&_links
 		width: 390px
 		margin: 0 auto
@@ -395,20 +405,30 @@ footer
 			justify-content: space-between
 			padding: 0 10px
 			a
+				text-decoration: none
 				font-style: normal
 				font-weight: 300
 				font-size: 15px
 				text-transform: uppercase
 				color: #070716
+				&:hover
+					color: $main-color
 		&_sub
 			display: flex
 			justify-content: space-between
 			margin-top: 15px
+			text-decoration: none
 			a
+				text-decoration: none
 				font-weight: 300
 				font-size: 11px
 				color: #999999
+				&:hover
+					color: $main-color
 		&_lang
+			text-decoration: none
+			margin: 0 auto
+			width: 15%
 			display: block
 			margin-top: 15px
 			font-style: normal
@@ -417,5 +437,7 @@ footer
 			text-align: center
 			text-transform: uppercase
 			color: $third-color
+			&:hover
+				color: black
 .xs-visible
 	display: none
